@@ -70,3 +70,26 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+
+function gryffindorFolk(arr) {
+  arr.forEach((element) => {
+    const { house } = element;
+    if (house === "Gryffindor") {
+      const { firstName, lastName } = element;
+      console.log(`${firstName} ${lastName}`);
+    }
+  });
+}
+gryffindorFolk(hogwarts);
+
+function hasAPet(array) {
+  array.forEach((element) => {
+    const { firstName, lastName, pet } = element;
+    if (pet !== null) {
+      console.log(`${firstName} ${lastName}`);
+    }
+  });
+}
+
+hasAPet(hogwarts);
